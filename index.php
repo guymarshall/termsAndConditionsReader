@@ -3,15 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>URL Input and Textarea</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Adjusting height for textarea */
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<style>
         .custom-textarea {
             height: 200px;
-            resize: none; /* Prevent resizing */
+            resize: none;
         }
-        /* Centered 'OR' text */
         .center-text {
             text-align: center;
             margin-bottom: 20px;
@@ -23,7 +20,6 @@
     <form>
         <div class="row">
             <div class="col-md-5">
-                <!-- URL Input -->
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
                         <span class="input-group-text">URL</span>
@@ -35,7 +31,6 @@
 				<p class="center-text">OR</p>
 			</div>
             <div class="col-md-5">
-                <!-- Textarea -->
                 <div class="form-group">
                     <label for="exampleTextarea">Textarea</label>
                     <textarea class="form-control custom-textarea" id="exampleTextarea" rows="5"></textarea>
@@ -49,23 +44,13 @@
         </div>
     </form>
 </div>
-
-<!-- Bootstrap JS and dependencies -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-<!-- Your custom JavaScript -->
 <script>
-    // Add JavaScript logic here if needed
-    document.querySelector('form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the form from submitting (for demonstration purposes)
+    document.querySelector('form').addEventListener('submit', (event) => {
+        event.preventDefault();
         const url = document.getElementById('urlInput').value;
         const text = document.getElementById('exampleTextarea').value;
-        // Do something with the URL and text data (e.g., send it to a server, process it, etc.)
         console.log('URL:', url);
         console.log('Text:', text);
-        // Additional logic can be added here to handle the form submission
     });
 </script>
 </body>
