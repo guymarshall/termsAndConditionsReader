@@ -4,16 +4,6 @@
     <meta charset="UTF-8">
     <title>URL Input and Textarea</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-	<style>
-        .custom-textarea {
-            height: 200px;
-            resize: none;
-        }
-        .center-text {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-    </style>
 </head>
 <body>
 <div class="container mt-5">
@@ -28,12 +18,12 @@
                 </div>
             </div>
 			<div class="col-md-2">
-				<p class="center-text">OR</p>
+				<p style="text-align: center; margin-bottom: 20px;">OR</p>
 			</div>
             <div class="col-md-5">
                 <div class="form-group">
                     <label for="exampleTextarea">Textarea</label>
-                    <textarea class="form-control custom-textarea" id="exampleTextarea" rows="5"></textarea>
+                    <textarea class="form-control" style="height: 200px; resize: none;" id="exampleTextarea" rows="5"></textarea>
                 </div>
             </div>
         </div>
