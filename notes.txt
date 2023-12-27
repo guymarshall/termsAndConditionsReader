@@ -1,0 +1,4 @@
+1 - display a text area field to paste the terms and conditions into
+2 - save the text to a text file with the filename YYYY_MM_DD_S:I:H.txt (may need to change it)
+3 - split the text by '.' into a vector
+4 - process (not sure how to do that yet)
