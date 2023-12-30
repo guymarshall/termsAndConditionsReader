@@ -10,6 +10,19 @@ function initialiseUrlTextChoice() {
     });
 }
 
+function initialiseButtons() {
+    const submitTextButton = document.getElementById('submit-text-button');
+    const submitUrlButton = document.getElementById('submit-url-button');
+
+    submitTextButton.addEventListener('click', () => {
+        alert('Submit text button in development');
+    });
+
+    submitUrlButton.addEventListener('click', () => {
+        alert('Submit url button in development');
+    });
+}
+
 function showHideUrlText(switchOn) {
     const leftSection = document.querySelector('.left-section');
     const rightSection = document.querySelector('.right-section');
@@ -31,4 +44,5 @@ function showHideUrlText(switchOn) {
 
 document.addEventListener('DOMContentLoaded', () => {
     initialiseUrlTextChoice();
+    initialiseButtons();
 });
